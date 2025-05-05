@@ -1,0 +1,89 @@
+/* Contenedor principal que alinea la imagen y el formulario */
+.contact-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+/* Estilo para la imagen de contacto */
+.contact-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Contenedor del componente de contacto */
+.contact-container {
+  flex: 1;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+/* Título del componente de contacto */
+.contact-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Formulario de contacto */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+/* Inputs del formulario */
+.contact-form input, .contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Botón de envío */
+.contact-form button[type="submit"] {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Estilos para los iconos de redes sociales */
+.contact-social {
+  margin-top: 20px;
+}
+
+.contact-social a {
+  margin-right: 10px;
+  font-size: 24px;
+  color: #666;
+  transition: color 0.2s ease;
+}
+
+.contact-social a:hover {
+  color: #4CAF50;
+}
+
+/* Estilos para la información de contacto */
+.contact-info {
+  margin-top: 20px;
+  font-size: 16px;
+  color: #666;
+}
+
+.contact-info span {
+  display: block;
+  margin-top: 5px;
+}

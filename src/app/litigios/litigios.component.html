@@ -1,0 +1,22 @@
+<div>
+    <div class="container-fluid p-5">
+      <h1>Litigios y Defensa</h1>
+      <p class="lead">Representación legal en tribunales y defensa de los intereses de los clientes.</p>
+      <div class="row">
+        @for (litigio of litigios; track litigio.id) {
+          <div class="col-md-4">
+            <div class="card" style="width: 25rem; margin: 10px;">
+              <img src='{{ litigio.imagen }}' class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">{{ litigio.nombre }}</h5>
+                <p class="card-text">{{ litigio.descripcion }}</p>
+                <div class="text-center">
+                  <a href="#" class="btn btn-primary mt-auto">Consultar</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        }
+      </div>
+    </div>
+  </div>

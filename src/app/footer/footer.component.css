@@ -1,0 +1,24 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+footer {
+    margin-top: auto;
+}
+
+.bg-footer {
+    background-color: #0b07e9; /* azul */
+}
+
+.contact-social a {
+    margin-right: 10px;
+    font-size: 24px;
+    color: #fefefe;
+    transition: color 0.2s ease;
+  }
+
+.contact-social a:hover {
+    color: #666;
+}

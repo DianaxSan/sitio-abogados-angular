@@ -1,0 +1,11 @@
+.navbar-custom {
+    background-color: #0b07e9; /* azul oscuro */
+  }
+
+.navbar-custom .nav-link:hover {
+    background-color: #ffffff;
+    color: #0b07e9; 
+    border-radius: 10px; 
+    padding: 10px 20px; 
+}
+

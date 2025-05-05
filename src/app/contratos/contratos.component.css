@@ -1,0 +1,17 @@
+.card-body {
+    height: 200px; 
+    overflow-y: auto; 
+  }
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+}
+  
+.card-body > *:not(:last-child) {
+    margin-bottom: auto;
+}
+  
+.card-body > a.btn {
+    margin-top: auto;
+}

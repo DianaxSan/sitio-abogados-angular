@@ -1,0 +1,12 @@
+.card-body {
+    height: 350px; 
+    overflow-y: auto; 
+  }
+
+.card-text-small {
+    font-size: 0.9rem; 
+}
+
+.text-justify {
+    text-align: justify;
+}

@@ -1,0 +1,58 @@
+<section class="about-us py-5">
+    <div class="container">
+      
+      <div class="row gx-4">
+        <div class="col-md-6">
+          <h3 class="mb-3">Misión</h3>
+          <p class="text-justify">
+            Nuestra misión en Ruiz & Asociados es proporcionar asesoría y representación legal de alta calidad, enfocada en la defensa de los derechos e intereses de nuestros clientes. Nos comprometemos a ofrecer soluciones legales efectivas y personalizadas, basadas en la ética, el profesionalismo, y el profundo conocimiento de las leyes, para contribuir al bienestar de la sociedad y al éxito de nuestros clientes.
+          </p>
+        </div>
+        <div class="col-md-6">
+          <h3 class="mb-3">Visión</h3>
+          <p class="text-justify">
+            Ser reconocidos como un despacho líder en el ámbito jurídico, destacando por nuestro compromiso con la excelencia, la innovación en nuestros servicios, y la confianza depositada en nosotros por nuestros clientes. Aspiramos a expandir nuestra influencia en el sector legal, convirtiéndonos en un referente en la asesoría y defensa jurídica en el país, y siendo el aliado estratégico preferido para nuestros clientes en todas sus necesidades legales.
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12 p-3">
+          <h1>Equipo de Abogados</h1>
+        </div>
+      </div>
+
+      <div class="row">
+        @for (abogado of equipo; track abogado.id) {
+
+            <div class="col-md-6">
+                <div class="card" style="width: 40rem; margin: 10px;">
+                  <div class="row no-gutters">
+                    <div class="col-md-6">
+                      <img src='{{ abogado.imagen }}' class="card-img" alt="..." style="object-fit: cover;">
+                    </div>
+                    <div class="col-md-6">
+                      <div class="card-body">
+                        <h5 class="card-title">{{ abogado.nombre }} </h5>
+                        <p class="card-text card-text-small">{{ abogado.cargo }}</p>
+                        <p class="card-text card-text-small"><strong>Formación:</strong> {{ abogado.formacion }}</p>
+                        <p class="card-text"><strong>Contacto:</strong> {{ abogado.correo }}</p>
+                        <div class="text-center">
+                          <a href="#" class="btn btn-primary">Ver más</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+
+
+
+
+        }
+      </div>
+
+    </div>
+  </section>

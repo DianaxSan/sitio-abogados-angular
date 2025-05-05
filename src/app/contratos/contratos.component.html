@@ -1,0 +1,22 @@
+<div>
+    <div class="container-fluid p-5">
+        <h1>Contratos y Negociaciones</h1>
+        <p class="lead">Redacción, revisión y negociación de contratos legales.</p>
+        <div class="row">
+        @for (contrato of contratos; track contrato.id) {
+          <div class="col-md-4">
+            <div class="card" style="width: 25rem; margin: 10px;">
+              <img src='{{ contrato.imagen }}' class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">{{ contrato.nombre }}</h5>
+                <p class="card-text">{{ contrato.descripcion }}</p>
+                <div class="text-center">
+                  <a href="#" class="btn btn-primary">Consultar</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        }
+      </div>
+    </div>
+  </div>
